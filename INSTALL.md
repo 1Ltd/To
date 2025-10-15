@@ -299,7 +299,7 @@ Create the buckets `chat-attachments` and `avatars` in your Supabase dashboard:
 
 ## Ollama Setup (Local AI Models)
 
-Ollama allows you to run AI models locally on your machine. Zola has built-in support for Ollama with automatic model detection.
+Ollama allows you to run AI models locally on your machine. ToT has built-in support for Ollama with automatic model detection.
 
 ### Installing Ollama
 
@@ -342,13 +342,13 @@ ollama list
 ollama serve
 ```
 
-### Zola + Ollama Integration
+### ToT + Ollama Integration
 
-Zola automatically detects all models available in your Ollama installation. No additional configuration is needed!
+ToT automatically detects all models available in your Ollama installation. No additional configuration is needed!
 
 **Features:**
 
-- **Automatic Model Detection**: Zola scans your Ollama instance and makes all models available
+- **Automatic Model Detection**: ToT scans your Ollama instance and makes all models available
 - **Intelligent Categorization**: Models are automatically categorized by family (Llama, Gemma, Qwen, etc.)
 - **Smart Tagging**: Models get appropriate tags (local, open-source, coding, size-based)
 - **No Pro Restrictions**: All Ollama models are free to use
@@ -358,7 +358,7 @@ Zola automatically detects all models available in your Ollama installation. No 
 
 #### Default Configuration
 
-By default, Zola connects to Ollama at `http://localhost:11434`. This works for local installations.
+By default, ToT connects to Ollama at `http://localhost:11434`. This works for local installations.
 
 #### Custom Ollama URL
 
@@ -379,7 +379,7 @@ OLLAMA_BASE_URL=http://your-ollama-server:11434 npm run dev
 
 #### Settings UI
 
-Zola includes a settings interface where you can:
+ToT includes a settings interface where you can:
 
 - Enable/disable Ollama integration
 - Configure custom Ollama base URLs
@@ -390,7 +390,7 @@ Access settings through the gear icon in the interface.
 
 ### Docker with Ollama
 
-For a complete Docker setup with both Zola and Ollama:
+For a complete Docker setup with both ToT and Ollama:
 
 ```bash
 # Use the provided Docker Compose file
@@ -398,7 +398,7 @@ docker-compose -f docker-compose.ollama.yml up
 
 # Or manually with separate containers
 docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
-docker run -p 3000:3000 -e OLLAMA_BASE_URL=http://ollama:11434 zola
+docker run -p 3000:3000 -e OLLAMA_BASE_URL=http://ollama:11434 ToT
 ```
 
 The `docker-compose.ollama.yml` file includes:
@@ -418,9 +418,9 @@ The `docker-compose.ollama.yml` file includes:
 
 #### Models not appearing
 
-1. Refresh the models list in Zola settings
+1. Refresh the models list in ToT settings
 2. Check Ollama has models: `ollama list`
-3. Restart Zola if models were added after startup
+3. Restart Tot if models were added after startup
 
 #### Performance optimization
 
