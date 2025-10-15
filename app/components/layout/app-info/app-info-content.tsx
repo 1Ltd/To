@@ -10,18 +10,6 @@ export function AppInfoContent() {
         Use Claude, OpenAI, Gemini, local models, and more, all in one place.
         <br />
       </p>
-      <p className="text-foreground leading-relaxed">
-        The code is available on{" "}
-        <a
-          href="https://github.com/ibelick/zola"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline"
-        >
-          GitHub
-        </a>
-        .
-      </p>
     </div>
   )
 }
