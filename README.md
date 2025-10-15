@@ -1,4 +1,4 @@
-# to
+# ToT
 
 **to** is the open-source chat interface for all your models.
 
