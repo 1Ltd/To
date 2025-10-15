@@ -12,7 +12,7 @@ export function ZolaIcon(props: SVGProps<SVGSVGElement>) {
       fill="none"
       {...props}
     >
-      <g clipPath="url(#zola)">
+      <g clipPath="url(#tot)">
         <mask
           id="zola"
           width={80}
@@ -31,7 +31,7 @@ export function ZolaIcon(props: SVGProps<SVGSVGElement>) {
         </g>
       </g>
       <defs>
-        <clipPath id="zola">
+        <clipPath id="Tomato">
           <path fill="currentColor" d="M0 0h80v80H0z" />
         </clipPath>
       </defs>
