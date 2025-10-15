@@ -1,5 +1,6 @@
 import { isSupabaseEnabled } from "@/lib/supabase/config"
 import { createServerClient } from "@supabase/ssr"
+import { createBrowserClient } from "@supabase/ssr"
 import { NextResponse, type NextRequest } from "next/server"
 
 export async function updateSession(request: NextRequest) {
@@ -8,7 +9,17 @@ export async function updateSession(request: NextRequest) {
       request,
     })
   }
-
+export const browserSupabase = createBrowserClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  {
+    auth: {
+      persistSession: true,
+      detectSessionInUrl: true,
+      storage: localStorage,
+    },
+  }
+);
   let supabaseResponse = NextResponse.next({
     request,
   })
