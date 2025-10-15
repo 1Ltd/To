@@ -22,12 +22,6 @@ const outfit = Outfit({
 });
 
 <body className={`${outfit.variable} antialiased`}>
-  <TanstackQueryProvider>
-    <LayoutClient />
-    <UserProvider initialUser={null}>
-  {children}
-</UserProvider>
-  </TanstackQueryProvider>
 </body>
 
 export const metadata: Metadata = {
