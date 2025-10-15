@@ -1,8 +1,8 @@
-# Zola Installation Guide
+# Tomato(ToT) Installation Guide
 
-Zola is a free, open-source AI chat app with multi-model support. This guide covers how to install and run Zola on different platforms, including Docker deployment options.
+ToT is a free, open-source AI chat app with multi-model support. This guide covers how to install and run ToT on different platforms, including Docker deployment options.
 
-![Zola screenshot](./public/cover_zola.webp)
+![ToT screenshot](./public/cover_zola.webp)
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ Copy the generated value and add it to your `.env.local` file as the `CSRF_SECRE
 
 ### BYOK (Bring Your Own Key) Setup
 
-Zola supports BYOK functionality, allowing users to securely store and use their own API keys for AI providers. To enable this feature, you need to configure an encryption key for secure storage of user API keys.
+ToT supports BYOK functionality, allowing users to securely store and use their own API keys for AI providers. To enable this feature, you need to configure an encryption key for secure storage of user API keys.
 
 #### Generating an Encryption Key
 
