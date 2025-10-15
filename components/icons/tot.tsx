@@ -14,7 +14,7 @@ export function ToTIcon(props: SVGProps<SVGSVGElement>) {
     >
       <g clipPath="url(#tot)">
         <mask
-          id="zola"
+          id="tot"
           width={80}
           height={80}
           x={0}
