@@ -137,9 +137,6 @@ export function AppSidebar() {
           target="_blank"
           aria-label="©ToT"
         >
-          <div className="rounded-full border p-1">
-            <Logo className="size-4" />
-          </div>
           <div className="flex flex-col">
             <div className="text-sidebar-foreground text-sm font-medium">
               2020-2025
