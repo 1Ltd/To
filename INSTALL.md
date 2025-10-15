@@ -477,8 +477,8 @@ DISABLE_OLLAMA=true
 
 ```bash
 # Clone the repository
-git clone https://github.com/ibelick/zola.git
-cd zola
+git clone https://github.com/1Ltd/to.git
+cd to
 
 # Install dependencies
 npm install
@@ -491,8 +491,8 @@ npm run dev
 
 ```bash
 # Clone the repository
-git clone https://github.com/ibelick/zola.git
-cd zola
+git clone https://github.com/1Ltd/to.git
+cd to
 
 # Install dependencies
 npm install
@@ -505,7 +505,7 @@ The application will be available at [http://localhost:3000](http://localhost:30
 
 ## Supabase Setup
 
-Zola requires Supabase for authentication and storage. Follow these steps to set up your Supabase project:
+ToT requires Supabase for authentication and storage. Follow these steps to set up your Supabase project:
 
 1. Create a new project at [Supabase](https://supabase.com)
 2. Set up the database schema using the SQL script below
@@ -590,7 +590,7 @@ Build and run the Docker container:
 
 ```bash
 # Build the Docker image
-docker build -t zola .
+docker build -t ToT .
 
 # Run the container
 docker run -p 3000:3000 \
@@ -599,7 +599,7 @@ docker run -p 3000:3000 \
   -e SUPABASE_SERVICE_ROLE=your_supabase_service_role_key \
   -e OPENAI_API_KEY=your_openai_api_key \
   -e MISTRAL_API_KEY=your_mistral_api_key \
-  zola
+  ToT
 ```
 
 ### Option 2: Docker Compose
@@ -610,7 +610,7 @@ Create a `docker-compose.yml` file in the root of your project:
 version: "3"
 
 services:
-  zola:
+  ToT:
     build:
       context: .
       dockerfile: Dockerfile
@@ -641,10 +641,10 @@ docker-compose down
 
 ### Option 3: Docker Compose with Ollama (Recommended for Local AI)
 
-For a complete setup with both Zola and Ollama running locally, use the provided `docker-compose.ollama.yml`:
+For a complete setup with both ToT and Ollama running locally, use the provided `docker-compose.ollama.yml`:
 
 ```bash
-# Start both Zola and Ollama services
+# Start both ToT and Ollama services
 docker-compose -f docker-compose.ollama.yml up -d
 
 # View logs
@@ -659,7 +659,7 @@ This setup includes:
 - **Ollama service** with GPU support (if available)
 - **Automatic model pulling** (llama3.2:3b by default)
 - **Health checks** for both services
-- **Proper networking** between Zola and Ollama
+- **Proper networking** between ToT and Ollama
 - **Volume persistence** for Ollama models
 
 The Ollama service will be available at `http://localhost:11434` and Zola will automatically detect all available models.
@@ -675,7 +675,7 @@ environment:
 
 ### Deploy to Vercel
 
-The easiest way to deploy Zola is using Vercel:
+The easiest way to deploy ToT is using Vercel:
 
 1. Push your code to a Git repository (GitHub, GitLab, etc.)
 2. Import the project into Vercel
@@ -704,7 +704,7 @@ npm start
 
 ## Configuration Options
 
-You can customize various aspects of Zola by modifying the configuration files:
+You can customize various aspects of ToT by modifying the configuration files:
 
 - `app/lib/config.ts`: Configure AI models, daily message limits, etc.
 - `.env.local`: Set environment variables and API keys
