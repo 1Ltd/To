@@ -15,10 +15,22 @@ import { ThemeProvider } from "next-themes"
 import Script from "next/script"
 import { LayoutClient } from "./layout-client"
 
+import { Outfit } from "next/font/google";
+
 const outfit = Outfit({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
+  variable: "--font-outfit",
 });
+
+<body className={`${outfit.variable} antialiased`}>
+  <TanstackQueryProvider>
+    <LayoutClient />
+    <UserProvider initialUser={userProfile}>
+      {children}
+    </UserProvider>
+  </TanstackQueryProvider>
+</body>
 
 export const metadata: Metadata = {
   title: "Tomato",
