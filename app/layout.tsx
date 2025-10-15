@@ -15,15 +15,10 @@ import { ThemeProvider } from "next-themes"
 import Script from "next/script"
 import { LayoutClient } from "./layout-client"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
   subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
+  weight: ["300", "400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Tomato",
@@ -49,9 +44,7 @@ export default async function RootLayout({
           {...(isDev ? { "data-debug": "tomatoo.icu" } : {})}
         />
       ) : null}
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${outfit.variable} antialiased`}>
         <TanstackQueryProvider>
           <LayoutClient />
           <UserProvider initialUser={userProfile}>
