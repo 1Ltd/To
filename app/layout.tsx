@@ -21,9 +21,6 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
-<body className={`${outfit.variable} antialiased`}>
-</body>
-
 export const metadata: Metadata = {
   title: "Tomato",
   description:
@@ -36,7 +33,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }>) {
   const isDev = process.env.NODE_ENV === "development"
-  const isOfficialDeployment = process.env.TOT_OFFICIAL === "true"
+  const isOfficialDeployment = process.env.ZOLA_OFFICIAL === "true"
   const userProfile = await getUserProfile()
 
   return (
