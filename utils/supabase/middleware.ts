@@ -32,7 +32,7 @@ export async function updateSession(request: NextRequest) {
           )
         },
       },
-    }
+    },
   )
 
   // Do not run code between createServerClient and
