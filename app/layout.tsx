@@ -24,7 +24,7 @@ const outfit = Outfit({
 <body className={`${outfit.variable} antialiased`}>
   <TanstackQueryProvider>
     <LayoutClient />
-    <UserProvider initialUser={userProfile}>
+    <UserProvider>
       {children}
     </UserProvider>
   </TanstackQueryProvider>
