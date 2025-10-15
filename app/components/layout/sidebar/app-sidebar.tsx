@@ -132,20 +132,20 @@ export function AppSidebar() {
       </SidebarContent>
       <SidebarFooter className="border-border/40 mb-2 border-t p-3">
         <a
-          href="https://github.com/ibelick/zola"
+          href="https://tomatoo.icu"
           className="hover:bg-muted flex items-center gap-2 rounded-md p-2"
           target="_blank"
-          aria-label="Star the repo on GitHub"
+          aria-label="©ToT"
         >
           <div className="rounded-full border p-1">
-            <GithubLogo className="size-4" />
+            <Logo className="size-4" />
           </div>
           <div className="flex flex-col">
             <div className="text-sidebar-foreground text-sm font-medium">
-              Zola is open source
+              2020-2025
             </div>
             <div className="text-sidebar-foreground/70 text-xs">
-              Star the repo on GitHub!
+              All rights Reserved.
             </div>
           </div>
         </a>
