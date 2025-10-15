@@ -6,7 +6,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Outfit", sans-serif;
   --spacing-app-header: 56px;
   --spacing-input-area: 134px;
 
@@ -150,10 +150,34 @@
   }
 }
 
-code {
-  font-family: var(--font-geist-mono);
-  font-feature-settings: var(--default-mono-font-feature-settings);
-  font-variation-settings: var(--default-mono-font-variation-settings);
+/* ============================
+   🌐 Global Outfit Font Weights
+   ============================ */
+html, body {
+  font-family: var(--font-sans);
+  font-weight: 400; /* Regular default */
+  line-height: 1.5;
+}
+
+/* 600 → Semibold for major headings */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* 500 → Medium for buttons, labels, emphasis */
+button, label, strong {
+  font-weight: 500;
+}
+
+/* 400 → Regular for paragraphs and content text */
+p, span, li, div {
+  font-weight: 400;
+}
+
+/* 300 → Light for captions, secondary info */
+small, .caption, .muted {
+  font-weight: 300;
+  opacity: 0.85;
 }
 
 /* sonner toast */
