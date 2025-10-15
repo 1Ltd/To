@@ -662,7 +662,7 @@ This setup includes:
 - **Proper networking** between ToT and Ollama
 - **Volume persistence** for Ollama models
 
-The Ollama service will be available at `http://localhost:11434` and Zola will automatically detect all available models.
+The Ollama service will be available at `http://localhost:11434` and ToT will automatically detect all available models.
 
 To customize which models are pulled, edit the `docker-compose.ollama.yml` file and modify the `OLLAMA_MODELS` environment variable:
 
